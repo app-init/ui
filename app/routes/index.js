@@ -1,4 +1,4 @@
-import * as Main from '~/modules/Main/routes'
+import * as Main from '../modules/Main/routes'
 
 let routes = [
   Main.Home,

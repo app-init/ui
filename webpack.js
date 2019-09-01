@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
-  context: resolve(__dirname, 'app/'),
+  // context: resolve(__dirname, 'app/'),
   entry: resolve(__dirname, 'app/Root.js'),
   output: {
     path: resolve(__dirname, '../dist/'),
@@ -81,7 +81,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'App Init',
-      template: '../template.html',
+      template: 'template.html',
       chunksSortMode: 'none'
     }),
   ],

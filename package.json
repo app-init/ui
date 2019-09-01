@@ -13,7 +13,8 @@
   "files": [
     "es-production/*",
     "es/*",
-    "assets/*"
+    "assets/*",
+    "src/app-init-ui.js"
   ],
   "devDependencies": {
     "@app-init/ui": "^1.0.0",

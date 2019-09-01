@@ -52,7 +52,8 @@ export default [
   {
     input: 'src/index.js',
     output: { 
-      dir: 'es', 
+      // dir: 'es', 
+      file: 'es/app-init.js', 
       format: 'es', 
       indent: false, 
       sourcemap: true,
@@ -83,7 +84,8 @@ export default [
   {
     input: 'src/index.js',
     output: { 
-      dir: 'es-production', 
+      // dir: 'es-production',
+      file: 'es/app-init.min.js', 
       format: 'es', 
       indent: false, 
       sourcemap: true,
@@ -97,7 +99,7 @@ export default [
       globals(),
       builtins(),
       sass({
-        output: 'es-production/index.css', 
+        output: 'es/index.css', 
         plugins: [
           autoprefixer
         ],
