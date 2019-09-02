@@ -1,6 +1,6 @@
 {
   "name": "@app-init/ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/app-init-ui.js",
   "repository": "https://github.com/app-init/ui",
   "author": "Matthew Owens",
