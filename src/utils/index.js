@@ -243,6 +243,14 @@ export default class Utils {
     history.push(...args)
   }
 
+  replace(...args) {
+    history.replace(...args)
+  }
+
+  getHistory() {
+    return history
+  }
+
   setReducer(reducer) {
     this.reducer = reducer
   }

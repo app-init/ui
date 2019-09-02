@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import History from './Core/History'
+import Utils from '../utils'
 // import invariant from 'invariant'
 
 const isModifiedEvent = (event) =>
@@ -12,9 +12,11 @@ const isModifiedEvent = (event) =>
 class Link extends React.Component {
   constructor(props) {
     super(props)
+    this.utils = new Utils()
   }
 
   handleClick(event) {
+    console.log(this)
     if (this.props.onClick)
       this.props.onClick(event)
 
@@ -30,9 +32,9 @@ class Link extends React.Component {
       const { replace, to } = this.props
 
       if (replace) {
-        History.replace(to)
+        this.utils.getHistory().replace(to)
       } else {
-        History.push(to)
+        this.utils.getHistory().push(to)
       }
     }
   }
@@ -40,11 +42,11 @@ class Link extends React.Component {
   render() {
     const { replace, to, innerRef, ...props } = this.props // eslint-disable-line no-unused-vars
 
-    const href = History.getHistory().createHref(
+    const href = this.utils.getHistory().createHref(
       typeof to === 'string' ? { pathname: to } : to
     )
 
-    return <a {...props} onClick={this.handleClick} href={href} ref={innerRef} />
+    return <a {...props} onClick={(event) => this.handleClick(event)} href={href} ref={innerRef} />
   }
 }
 
