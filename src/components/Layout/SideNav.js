@@ -102,59 +102,60 @@ class SideNav extends Component {
             : <div />
           } */}
           {permissions.system != undefined && permissions.system.is_admin == true
-            ? <NavSubMenu icon="fa fa-database" title="Admin">
+            ?
+             <NavSubMenu icon="far fa-database" title="Admin">
               <li>
                 <Link to="/admin/permissions">
-                  <span className="text-danger fa fa-user-secret"></span>
+                  <span className="text-danger fal fa-user-secret"></span>
                   {' '}Permissions
                 </Link>
               </li>
               <li>
                 <Link to="/admin/logs">
-                  <span className="text-danger fa fa-database"></span>
+                  <span className="text-danger fal fa-database"></span>
                   {' '}Logs
                 </Link>
               </li>
               <li>
                 <a>
-                  <span className="text-danger fa fa-bell"></span>
+                  <span className="text-danger fal fa-bell"></span>
                   {' '}Notifications
                 </a>
               </li>
               <li>
                 <Link to="/admin/change-user">
-                  <span className="text-danger fa fa-user"></span>
+                  <span className="text-danger fal fa-user"></span>
                   {' '}Change User
                 </Link>
               </li>
               <li>
                 <Link to="/admin/settings">
-                  <span className="text-danger fa fa-cog"></span>
+                  <span className="text-danger fal fa-cog"></span>
                   {' '}Settings
                 </Link>
               </li>
               <li>
                 <Link to="/admin/test-api">
-                  <span className="text-danger fa fa-code"></span>
+                  <span className="text-danger fal fa-code"></span>
                   {' '}Test Api
                 </Link>
               </li>
             </NavSubMenu>
             : <div />
           }
-          <NavSubMenu icon="text-success fa fa-info" title="Info">
+          <NavSubMenu icon="text-success far fa-info" title="Info">
             <li>
               <Link to="/info/api">
                 <span style={{
                   paddingRight: '5px'
-                }} className="text-danger fa fa-code"></span>
+                }} className="text-danger fal fa-code"></span>
                 API
               </Link>
             </li>
           </NavSubMenu>
           <li>
             <a target="_blank" rel="noopener noreferrer" href="https://gitlab.cee.redhat.com/mowens/cee-tools/issues">
-              <i className="text-warning fa fa-gitlab"></i>
+              <i className="text-warning fab fa-gitlab"></i>
               Report an Issue
             </a>
           </li>
