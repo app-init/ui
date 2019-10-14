@@ -80,7 +80,7 @@ class TopNav extends Component {
         </div>
         <div className="header__logo">
           <h1>
-            <Link to='/'>Webplatform</Link>
+            <Link to='/'>{ this.props.title || 'App Init' }</Link>
           </h1>
         </div>
         { this.props.search }

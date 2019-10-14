@@ -85,13 +85,13 @@ export default class NavSubMenu extends Component {
       return (
         <div className="user">
           <div className="user__info" onClick={ () => this.onClick() }>
-            {/* <img className="user__img" src={this.user.picture} /> */}
+            <img className="user__img" src={this.user.picture} />
             <div>
               <div className="user__name">
-                {/* {this.user.kerberos.displayName} {this.user.kerberos.sn} */}
+                {this.user.metadata.displayName} {this.user.metadata.sn}
               </div>
               <div className="user__email">
-                {/* {this.user.kerberos.mail} */}
+                {this.user.metadata.mail}
               </div>
             </div>
           </div>

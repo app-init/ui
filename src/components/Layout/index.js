@@ -115,6 +115,7 @@ class Layout extends Component {
           search={ this.state.layout.search }
           sideNavToggled={ this.props.sideNavToggled }
           searchToggled={ this.props.searchToggled }
+          title={this.props.appTitle}
         />
         <div className="main">
           <div className={ sideNavClass }>
