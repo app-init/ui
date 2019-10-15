@@ -85,7 +85,7 @@ export default class NavSubMenu extends Component {
       return (
         <div className="user">
           <div className="user__info" onClick={ () => this.onClick() }>
-            <img className="user__img" src={this.user.picture} />
+            <img className="user__img" src={this.user.metadata.picture} />
             <div>
               <div className="user__name">
                 {this.user.metadata.displayName} {this.user.metadata.sn}
