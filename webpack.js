@@ -89,7 +89,7 @@ module.exports = {
     disableHostCheck: true,
     clientLogLevel: "info",
     host: '0.0.0.0',
-    port: 3000,
+    port: 3001,
     contentBase: resolve(__dirname, './dist/'),
     publicPath: '/',
     historyApiFallback: true,

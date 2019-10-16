@@ -23,7 +23,8 @@ export class AppContainer extends React.Component {
       uid: "default",
       email: "mowens@redhat.com",
       permissions: {},
-      sessions: {}
+      sessions: {},
+      metadata: {}
     }
 
     let info = {}
