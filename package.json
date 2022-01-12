@@ -74,7 +74,7 @@
     "history": "^4.9.0",
     "jquery": "^3.4.1",
     "lodash": "^4.17.15",
-    "markdown-it": "^9.1.0",
+    "markdown-it": "^12.3.2",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.26",
     "node-waves": "^0.7.6",
