@@ -76,7 +76,7 @@
     "lodash": "^4.17.15",
     "markdown-it": "^9.1.0",
     "moment": "^2.24.0",
-    "moment-timezone": "^0.5.26",
+    "moment-timezone": "^0.5.35",
     "node-waves": "^0.7.6",
     "path-to-regexp": "^3.0.0",
     "popper.js": "^1.15.0",
